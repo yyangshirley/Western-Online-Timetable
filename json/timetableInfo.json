@@ -1,0 +1,692 @@
+{
+    "Component":[
+       {
+          "Component_id":"All",
+          "Component_value":"All"
+       },
+       {
+          "Component_id":"LEC",
+          "Component_value":"Lecture"
+       },
+       {
+          "Component_id":"TUT",
+          "Component_value":"Tutorial"
+       },
+       {
+          "Component_id":"LAB",
+          "Component_value":"Laboratory"
+       }
+    ],
+    "Campus":[
+       {
+          "Campus_id":"Any",
+          "Campus_value":"Any"
+       },
+       {
+          "Campus_id":"KC",
+          "Campus_value":"King's"
+       },
+       {
+          "Campus_id":"HC",
+          "Campus_value":"Huron"
+       },
+       {
+          "Campus_id":"UWO",
+          "Campus_value":"Main"
+       },
+       {
+          "Campus_id":"BR",
+          "Campus_value":"Brescia"
+       }
+    ],
+    "CourseType":[
+       {
+          "CourseType_id":"All",
+          "CourseType_value":"All"
+       },
+       {
+          "CourseType_id":"inPerson",
+          "CourseType_value":"In Person"
+       },
+       {
+        "CourseType_id":"Blended",
+        "CourseType_value":"Blended"
+     },
+     {
+        "CourseType_id":"Distance",
+        "CourseType_value":"Distance Studies/Online"
+     }
+    ],
+    "Designation":[
+       {
+          "Designation_id":"Any",
+          "Designation_value":"Any (any suffix)"
+       },
+       {
+          "Designation_id":"Full",
+          "Designation_value":"Full Course Not Designated As An Essay Course (no suffix)"
+       },
+       {
+        "Designation_id":"E",
+        "Designation_value":"Essay Full Course (E)"
+     },
+     {
+        "Designation_id":"A",
+        "Designation_value":"First Term Half-Course (A)"
+     },
+     {
+        "Designation_id":"B",
+        "Designation_value":"Second Term Half-Course (B)"
+     },
+     {
+        "Designation_id":"F",
+        "Designation_value":"First Term Essay Half-Course (F)"
+     },
+     {
+        "Designation_id":"G",
+        "Designation_value":"Second Term Essay Half-Course (G)"
+     },
+     {
+        "Designation_id":"Q",
+        "Designation_value":"First Term First Quarter Course (Q)"
+     },
+     {
+        "Designation_id":"R",
+        "Designation_value":"First Term Second Quarter Course (R)"
+     },
+     {
+        "Designation_id":"S",
+        "Designation_value":"Second Term First Quarter Course (S)"
+     },
+     {
+        "Designation_id":"T",
+        "Designation_value":"Second Term Second Quarter Course (T)"
+     },
+     {
+        "Designation_id":"W",
+        "Designation_value":"First Term Full Course (full course offered in one term) (W)"
+     },
+     {
+        "Designation_id":"X",
+        "Designation_value":"Second Term Full Course (full course offered in one term)  (X)"
+     },
+     {
+        "Designation_id":"Y",
+        "Designation_value":"Half-Course Offered In Other Than A Regular Session (Y)"
+     },
+     {
+        "Designation_id":"Z",
+        "Designation_value":"Essay Half-Course Offered In Other Than A Regular Session (Z)"
+     }
+    ],
+    "subject":[
+      {
+         "subject_id":"All Subjects",
+         "subject_value":"All Subjects"
+      },
+     {
+        "subject_id":"ACTURSCI",
+        "subject_value":"Actuarial Science"
+     },
+     {
+        "subject_id":"AMERICAN",
+        "subject_value":"American Studies"
+     },
+     {
+        "subject_id":"ANATCELL",
+        "subject_value":"Anatomy and Cell Biology"
+     },
+     {
+        "subject_id":"ANTHRO",
+        "subject_value":"Anthropology"
+     },
+     {
+        "subject_id":"APPLMATH",
+        "subject_value":"Applied Mathematics"
+     },
+     {
+        "subject_id":"ARABIC",
+        "subject_value":"Abrabic"
+     },
+     {
+        "subject_id":"AH",
+        "subject_value":"Art History"
+     },
+     {
+        "subject_id":"ARTSHUM",
+        "subject_value":"Arts and Humanities"
+     },
+     {
+        "subject_id":"ASTRONOM",
+        "subject_value":"Astronomy"
+     },
+     {
+        "subject_id":"BIBLSTUD",
+        "subject_value":"Biblical Studies"
+     },
+     {
+        "subject_id":"BIOCHEM",
+        "subject_value":"Biochemistry"
+     },
+     {
+        "subject_id":"BIOLOGY",
+        "subject_value":"Biology"
+     },
+     {
+        "subject_id":"BME",
+        "subject_value":"Biomedical Engineering"
+     },
+     {
+        "subject_id":"BIOSTATS",
+        "subject_value":"Biostatistics"
+     },
+     {
+        "subject_id":"BUSINESS",
+        "subject_value":"Business Administration"
+     },
+     {
+        "subject_id":"CALCULUS",
+        "subject_value":"Calculus"
+     },
+     {
+        "subject_id":"CGS",
+        "subject_value":"Centre for Global Studies"
+     },
+     {
+        "subject_id":"CBE",
+        "subject_value":"Chem & Biochem Engineering"
+     },
+     {
+        "subject_id":"CHEMBIO",
+        "subject_value":"Chemical Biology"
+     },
+     {
+        "subject_id":"CHEM",
+        "subject_value":"Chemistry"
+     },
+     {
+        "subject_id":"CSI",
+        "subject_value":"Childhood & Social Institutns"
+     },
+     {
+        "subject_id":"CHINESE",
+        "subject_value":"Chinese"
+     },
+     {
+        "subject_id":"CHURCH",
+        "subject_value":"Church History"
+     },
+     {
+        "subject_id":"CHURLAW",
+        "subject_value":"Church Law"
+     },
+     {
+        "subject_id":"CHURMUSI",
+        "subject_value":"Church Music"
+     },
+     {
+        "subject_id":"CEE",
+        "subject_value":"Civil & Envrnmntl Engineering"
+     },
+     {
+        "subject_id":"CLASSICS",
+        "subject_value":"Classical Studies"
+     },
+     {
+        "subject_id":"CMBPROG",
+        "subject_value":"Combined Program Enrollment"
+     },
+     {
+        "subject_id":"COMMSCI",
+        "subject_value":"Communication Sci & Disorders"
+     },
+     {
+        "subject_id":"COMPLIT",
+        "subject_value":"Comparative Lit & Culture"
+     },
+     {
+        "subject_id":"COMPSCI",
+        "subject_value":"Computer Science"
+     },
+     {
+        "subject_id":"CA",
+        "subject_value":"Creative Arts"
+     },
+     {
+        "subject_id":"DANCE",
+        "subject_value":"Dance"
+     },
+     {
+        "subject_id":"DIGICOMM",
+        "subject_value":"Digital Communication"
+     },
+     {
+        "subject_id":"DIGIHUM",
+        "subject_value":"Digital Humanities"
+     },
+     {
+        "subject_id":"DISABST",
+        "subject_value":"Disability Studies"
+     },
+     {
+        "subject_id":"EARTHSCI",
+        "subject_value":"Earth Sciences"
+     },
+     {
+        "subject_id":"ECONOMIC",
+        "subject_value":"Economics"
+     },
+     {
+        "subject_id":"EELC",
+        "subject_value":"Education English Language Cen"
+     },
+     {
+        "subject_id":"ECE",
+        "subject_value":"Elect & Computer Engineering"
+     },
+     {
+        "subject_id":"ENGSCI",
+        "subject_value":"Engineering Science"
+     },
+     {
+        "subject_id":"ENGLISH",
+        "subject_value":"English"
+     },
+     {
+        "subject_id":"ENVIRSCI",
+        "subject_value":"Environmental Science"
+     },
+     {
+        "subject_id":"EPID",
+        "subject_value":"Epidemiology"
+     },
+     {
+        "subject_id":"EPIDEMIO",
+        "subject_value":"Epidemiology & Biostatistics"
+     },
+     {
+        "subject_id":"FIMS",
+        "subject_value":"FIMS"
+     },
+     {
+        "subject_id":"FAMLYSTU",
+        "subject_value":"Family Studies & Human Develop"
+     },
+     {
+        "subject_id":"FLDEDUC",
+        "subject_value":"Field Education"
+     },
+     {
+        "subject_id":"FILM",
+        "subject_value":"Film Studies"
+     },
+     {
+        "subject_id":"FINMOD",
+        "subject_value":"Financial Modelling"
+     },
+     {
+        "subject_id":"FOODNUTR",
+        "subject_value":"Foods and Nutrition"
+     },
+     {
+        "subject_id":"FRENCH",
+        "subject_value":"French"
+     },
+     {
+        "subject_id":"GEOGRAPH",
+        "subject_value":"Geography"
+     },
+     {
+        "subject_id":"GEOLOGY",
+        "subject_value":"Geology"
+     },
+     {
+        "subject_id":"GERMAN",
+        "subject_value":"German"
+     },
+     {
+        "subject_id":"GGB",
+        "subject_value":"Global Great Books"
+     },
+     {
+        "subject_id":"GLE",
+        "subject_value":"Governance, Leadership & Ethics"
+     },
+     {
+        "subject_id":"GREEK",
+        "subject_value":"Greek"
+     },
+     {
+        "subject_id":"GPE",
+        "subject_value":"Green Process Engineering"
+     },
+     {
+        "subject_id":"HEALTSCI",
+        "subject_value":"Health Sciences"
+     },
+     {
+        "subject_id":"HEBREW",
+        "subject_value":"Hebrew"
+     },
+     {
+        "subject_id":"HISTTHEO",
+        "subject_value":"Historical Thelogy"
+     },
+     {
+        "subject_id":"HISTORY",
+        "subject_value":"History"
+     },
+     {
+        "subject_id":"HISTSCI",
+        "subject_value":"History of Science"
+     },
+     {
+        "subject_id":"HOMILET",
+        "subject_value":"Homiletics"
+     },
+     {
+        "subject_id":"HUMANECO",
+        "subject_value":"Human Ecology"
+     },
+     {
+        "subject_id":"HUMANRS",
+        "subject_value":"Human Rights Studies"
+     },
+     {
+        "subject_id":"INDIGSTU",
+        "subject_value":"Indigenous Studies"
+     },
+     {
+        "subject_id":"INTEGSCI",
+        "subject_value":"Integrated Science"
+     },
+     {
+        "subject_id":"ICC",
+        "subject_value":"Intercultural Communications"
+     },
+     {
+        "subject_id":"INTERDIS",
+        "subject_value":"Interdisciplinary Studies"
+     },
+     {
+        "subject_id":"INTREL",
+        "subject_value":"International Relations"
+     },
+     {
+        "subject_id":"ITALIAN",
+        "subject_value":"Italian"
+     },
+     {
+        "subject_id":"JAPANESE",
+        "subject_value":"Japanese"
+     },
+     {
+        "subject_id":"JEWISH",
+        "subject_value":"Jewish Studies"
+     },
+     {
+        "subject_id":"MTP-BRJR",
+        "subject_value":"Journalism-Broadcasting Fanshw"
+     },
+     {
+        "subject_id":"KINESIOL",
+        "subject_value":"Kinesiology"
+     },
+     {
+        "subject_id":"LATIN",
+        "subject_value":"Latin"
+     },
+     {
+        "subject_id":"LAW",
+        "subject_value":"Law"
+     },
+     {
+        "subject_id":"LS",
+        "subject_value":"Leadership Studies"
+     },
+     {
+        "subject_id":"LINGUIST",
+        "subject_value":"Linguistics"
+     },
+     {
+        "subject_id":"LITURST",
+        "subject_value":"Liturgical Studies"
+     },
+     {
+        "subject_id":"LITURGIC",
+        "subject_value":"Liturgics"
+     },
+     {
+        "subject_id":"MOS",
+        "subject_value":"Management & Organizational St"
+     },
+     {
+        "subject_id":"MTP-MKTG",
+        "subject_value":"Marketing - Fanshawe"
+     },
+     {
+        "subject_id":"MATH",
+        "subject_value":"Mathematics"
+     },
+     {
+        "subject_id":"MME",
+        "subject_value":"Mech & Materials Engineering"
+     },
+     {
+        "subject_id":"MSE",
+        "subject_value":"Mechatronic Systems ENgineering"
+     },
+     {
+        "subject_id":"MIT",
+        "subject_value":"Media, Information & Technocult"
+     },
+     {
+        "subject_id":"MEDBIO",
+        "subject_value":"Medical Biophysics"
+     },
+     {
+        "subject_id":"MEDHINFO",
+        "subject_value":"Medical Health Informatics"
+     },
+     {
+        "subject_id":"MEDSCIEN",
+        "subject_value":"Medical Sciences"
+     },
+     {
+        "subject_id":"MEDIEVAL",
+        "subject_value":"Medieval Studies"
+     },
+     {
+        "subject_id":"MICROIMM",
+        "subject_value":"Microbiology & Immunology"
+     },
+     {
+        "subject_id":"MORALTHE",
+        "subject_value":"Moral Theology"
+     },
+     {
+        "subject_id":"MTP-MMED",
+        "subject_value":"Multimed Dsgn & Prod Fanshawe"
+     },
+     {
+        "subject_id":"MCS",
+        "subject_value":"Museum and Curatorial Studies"
+     },
+     {
+        "subject_id":"MUSIC",
+        "subject_value":"Music"
+     },
+     {
+        "subject_id":"NEURO",
+        "subject_value":"Neuroscience"
+     },
+     {
+        "subject_id":"NURSING",
+        "subject_value":"Nursing"
+     },
+     {
+        "subject_id":"ONEHEALT",
+        "subject_value":"One Health"
+     },
+     {
+        "subject_id":"PASTTHEO",
+        "subject_value":"Pastoral Theology"
+     },
+     {
+        "subject_id":"PATHOL",
+        "subject_value":"Pathology"
+     },
+     {
+        "subject_id":"PERSIAN",
+        "subject_value":"Persian"
+     },
+     {
+        "subject_id":"PHARM",
+        "subject_value":"Pharmacology"
+     },
+     {
+        "subject_id":"PHILST",
+        "subject_value":"Philosophical Studies"
+     },
+     {
+        "subject_id":"PHILOSOP",
+        "subject_value":"Philosophy"
+     },
+     {
+        "subject_id":"PHYSICS",
+        "subject_value":"Physics"
+     },
+     {
+        "subject_id":"PHYSIOL",
+        "subject_value":"Physiology"
+     },
+     {
+        "subject_id":"PHYSPHRM",
+        "subject_value":"Physiology and Pharmacology"
+     },
+     {
+        "subject_id":"POLISCI",
+        "subject_value":"Political Science"
+     },
+     {
+        "subject_id":"PPE",
+        "subject_value":"Politics, Philosophy, Economic"
+     },
+     {
+        "subject_id":"PSYCHOL",
+        "subject_value":"Psychology"
+     },
+     {
+        "subject_id":"REHABSCI",
+        "subject_value":"Rehabilitation Sciences"
+     },
+     {
+        "subject_id":"RELEDUC",
+        "subject_value":"Religious Education"
+     },
+     {
+        "subject_id":"RELSTUD",
+        "subject_value":"Religious Studies"
+     },
+     {
+        "subject_id":"SACRTHEO",
+        "subject_value":"Sacramental Theology"
+     },
+     {
+        "subject_id":"SCHOLARS",
+        "subject_value":"Scholars Electivs"
+     },
+     {
+        "subject_id":"SCIENCE",
+        "subject_value":"Science"
+     },
+     {
+        "subject_id":"SOCLJUST",
+        "subject_value":"Social Justice & Peace Studies"
+     },
+     {
+        "subject_id":"SOCSCI",
+        "subject_value":"Social Science"
+     },
+     {
+        "subject_id":"SOCWORK",
+        "subject_value":"Social Work"
+     },
+     {
+        "subject_id":"SOCIOLOG",
+        "subject_value":"Sociology"
+     },
+     {
+        "subject_id":"SE",
+        "subject_value":"Software Engineering"
+     },
+     {
+        "subject_id":"SPANISH",
+        "subject_value":"Spanish"
+     },
+     {
+        "subject_id":"SPEECH",
+        "subject_value":"Speech"
+     },
+     {
+        "subject_id":"SPIRTHEO",
+        "subject_value":"Spiritual Theology"
+     },
+     {
+        "subject_id":"STATS",
+        "subject_value":"Statistical Sciences"
+     },
+     {
+        "subject_id":"SA",
+        "subject_value":"Studio Art"
+     },
+     {
+        "subject_id":"SYSTHEO",
+        "subject_value":"Systematic Theology"
+     },
+     {
+        "subject_id":"THANAT",
+        "subject_value":"Thanatology"
+     },
+     {
+        "subject_id":"THEATRE",
+        "subject_value":"Theatre Studies"
+     },
+     {
+        "subject_id":"THEOETH",
+        "subject_value":"Theological Ethics"
+     },
+     {
+        "subject_id":"THEOLST",
+        "subject_value":"Theological Studies"
+     },
+     {
+        "subject_id":"THESIS",
+        "subject_value":"Thesis"
+     },
+     {
+        "subject_id":"TJ",
+        "subject_value":"Transitional Justics"
+     },
+     {
+        "subject_id":"WTC",
+        "subject_value":"Western Thought & Civilization"
+     },
+     {
+        "subject_id":"WOMENST",
+        "subject_value":"Women's Studies"
+     },
+     {
+        "subject_id":"WORLDLIT",
+        "subject_value":"World Literatures and Cultures"
+     },
+     {
+        "subject_id":"WRITING",
+        "subject_value":"Writing"
+     }
+    ],
+    "day": ["M", "Tu", "W", "Th", "F"],
+    "start_time":["8:00 am", "8:30 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "12:00 pm", "12:30 pm", "1:00 pm", "1:30 pm", "2:00 pm", "2:30 pm", "3:00 pm", "3:30 pm", "4:00 pm", "4:30 pm", "5:00 pm", "5:30 pm", "6:00 pm", "6:30 pm", "7:00 pm" ],
+    "end_time": ["9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "12:00 pm", "12:30 pm", "1:00 pm", "1:30 pm", "2:00 pm", "2:30 pm", "3:00 pm", "3:30 pm", "4:00 pm", "4:30 pm", "5:00 pm", "5:30 pm", "6:00 pm", "6:30 pm", "7:00 pm", "7:30pm", "8:00pm", "8:30pm", "9:00pm", "9:30pm", "10:00pm" ],
+    "status": false
+ }
