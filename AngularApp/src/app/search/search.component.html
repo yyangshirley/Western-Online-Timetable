@@ -1,0 +1,193 @@
+<div class="search-container">
+  <br>
+  <h2>Search</h2>
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+      <div class="colleft">
+            <div class="search-row">
+                  <div class="column">
+                      <label class="control-label">Subject:</label>
+                  </div>
+                  <div class="control">
+                      <select formControlName="subject" 
+                        name="subject" 
+                        (change)=getSelected($event.target.name,$event)>
+                          <option ng-model="subject" *ngFor="let x of subject" value="{{x.subject_id}}">
+                            {{x.subject_value}}
+                          </option>
+                      </select>
+                    </div>
+                    <div class="column">
+                        <label>Course Number:</label>
+                    </div>
+                    <div class="control">
+                        <input 
+                        formControlName = "course_number"
+                        name="course_number"                          
+                        placeholder="eg. 1001"
+                        (change)=getCourse($event.target.name,$event)
+                        class = "courseselect"
+                        autocomplete="off">
+                    </div>   
+                  </div>
+
+                    <div class="search-row">
+                      <div class="column">
+                        <label class="control-label">Course Suffix:</label>
+                      </div>
+                      <div class="control">
+                        <select name="designation" (change)=getSelected($event.target.name,$event)>
+                          <option name="designation" *ngFor="let x of design" value="{{x.Designation_id}}">
+                            {{x.Designation_value}}
+                          </option>
+                        </select>
+                      </div>
+                      
+
+                      <div class="column">
+                        <label>Component:</label>
+                      </div>
+                      <div class="control">
+                        <select name="component" formControlName="component">
+                          <option *ngFor="let x of component" value="{{x.Component_id}}">
+                            {{x.Component_value}}
+                          </option>
+                        </select>
+                      </div>    
+                    </div>
+
+                     
+
+                    <div class="search-row">
+
+                      <div class="column">
+                        <label class="control-label" >Starting Time:</label>
+                      </div>
+                      <div class="control">
+                        <select name="start_time" formControlName="start_time">
+                          <option>All</option>
+                          <option *ngFor="let x of start_time" value="{{x}}">
+                            {{x}}
+                          </option>
+                        </select>
+                      </div>
+                    
+                      <div class="column">
+                        <label>Ending Time:</label>
+                      </div>
+                      <div class="control">
+                        <select name="end_time" formControlName="end_time">
+                          <option>All</option>
+                          <option *ngFor="let x of end_time" value="{{x}}">
+                            {{x}}
+                          </option>
+                        </select><br>
+                      </div>
+                    </div>
+
+                    <div class="search-row">
+                      <div class="column">
+                        <label>Campus:</label>
+                      </div>
+                      <div class="control">
+                        <select name="campus" formControlName="campus">
+                          <option *ngFor="let x of campus" value="{{x.Campus_value}}">
+                            {{x.Campus_value}}
+                          </option>
+                        </select>
+                      </div>
+                      <div class="column">
+                        <label class="control-label">Day of Class:</label>
+                      </div>
+                      <div class="control">
+                        <label *ngFor="let x of day" >
+                          <input
+                          type="checkbox" 
+                          value="{{x.key}}"
+                          checked
+                          (change)="getDays($event)"/>
+                            {{x.value}}
+                          </label>
+                      </div>          
+                    </div>
+                  
+                    <div class="search-row">
+                      <div class="column1">
+                        <input type="checkbox" (change)="getStatus($event)">Show only courses open for registration.
+                        <br>
+                        *Note:may not be an accurate reflection during paper add/drop
+                      </div>
+
+                      <div class = "column3">
+                        <input type="submit" value="Submit" class="submit"/>
+                        <br>
+                    </div>  
+                    </div>
+                  </div>
+    </form>
+</div>
+<br>
+
+<div class="result-container" id="result-container">
+  <HR id="line" style="border:1 dashed #987cb9; display: none;" width="100%" color=#987cb9 SIZE=1>
+    <br>
+    <a id="result"></a>
+    <div id="result">{{resultLengthStr}}</div>
+    <br>
+    <br>
+    <input type="text" [(ngModel)] = "className" (input) = "Search()" placeholder="Search by Class Name" class="s1" id="s1"/>
+    <div *ngFor = "let result of courseResult | paginate:{itemsPerPage:5,currentPage:p}" class="course">
+        <h3>{{result.subject +" "+result.catalog_nbr +" - "+ result.className}}</h3>
+        <p><strong>Course Description:</strong> 
+          {{result.catalog_description}}</p>
+        <table class="pure-table pure-table-bordered">
+          <thead>
+              <tr>
+                  <th>Section</th>
+                  <th>Component</th>
+                  <th>Class Number</th>
+                  <th>Day of Class</th>
+                  <th>Start Time</th>
+                  <th>End Time</th>
+                  <th>Location</th>
+                  <th>Instructors</th>
+                  <th>Enrollment Status</th>
+                  <th>Requisites and Constrains</th>
+                  <th>Campus</th>
+              </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>{{result.course_info[0].class_section}}</td>
+              <td>{{result.course_info[0].ssr_component}}</td>
+              <td>{{result.course_info[0].class_nbr}}</td>
+              <td>
+                <tbody>
+                  <tr>
+                    <td style="width: 10%;" *ngFor = "let day of result.course_info[0].days">{{day}}</td>
+                  </tr>
+                </tbody>
+              </td>
+              <td>{{result.course_info[0].start_time}}</td>
+              <td>{{result.course_info[0].end_time}}</td>
+              <td>{{result.course_info[0].facility_ID}}</td>
+              <td>{{result.course_info[0].instructors}}</td>
+              <td>{{result.course_info[0].enrl_stat}}</td>
+              <td>{{result.course_info[0].descr}}</td>
+              <td>{{result.course_info[0].campus}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>  
+    </div>
+    <div class = "page">
+   <pagination-controls (pageChange)="p=$event" previousLabel = ""
+    nextLabel = "" responsive=true style="display:inline-block;">
+    </pagination-controls>
+    </div>
+  <div>
+ 
+
+ </div>
+
+</div>
